@@ -1,0 +1,46 @@
+.center{
+    text-align: center;
+    font-size: 4vw;
+}
+
+.head{
+    display: flex;
+    
+    
+
+}
+.head img{
+    width: 10vw;
+    height: 10vw;
+}
+.head h1{
+    margin-left: 4%;
+    color: blue;
+}
+.navi ul{
+    
+    display: flex; 
+    list-style: none;
+    gap: 2rem;
+
+}
+.navi ul li{
+    font-size:1.5vw;
+    
+}
+.navi a{
+    text-decoration: none;
+    color: red;
+}
+.navi{
+    display: flex;
+    justify-content: end ;
+    margin-right: 20px;
+    align-items: center;
+   
+}
+.image{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
