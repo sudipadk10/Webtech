@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;  
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+.header{
+    min-height: 100vh;
+    width : 100%;
+    background-image: url(image/csit.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 7vw;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    list-style: none;
+}
+.nav-links ul img{
+    width: 2vw;
+    height: 3vh;
+    
+}
+
+.nav-links ul li{
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+    position: relative;
+    
+    
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: rgb(85, 23, 5);
+    font-size: 1.8vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.nav-links ul li a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 115, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover ::after{
+   width: 100%;
+}
+.textbox{
+    width: 90%;
+    color: blue;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+}
+.textbox h1{
+    font-size: 35px;
+
+}
+.textbox p{
+    margin-top: 15px;
+    font-size: 16px;
+   font-style: normal;
+   color: rgb(4, 49, 65);
+}
+.more{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(1, 31, 77);
+    border: 2px solid darkblue;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.more:hover{
+    color: white;
+    background-color: rgb(135, 135, 197);
+    border: 0px ;
+}
+@media (min-width: 700px) {
+    .nav-links ul img{
+        display: none;
+        
+    }
+}
+@media(max-width:700px){
+    .textbox h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background:rgb(238, 185, 87);
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 1;
+    }
+    .nav-links ul img{
+        display: flex;
+        
+    }
+    .burger{
+        display: flex;
+        justify-content: end;
+        margin-right: 10px;
+    }
+}
